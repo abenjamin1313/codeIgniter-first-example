@@ -8,7 +8,7 @@ class Welcome extends CI_Controller {
 		$data['user_name'] = 'Adam';
 		$data['status_group'] = ['All', 'Available', 'Unavailable'];
 		$this->load->view('Layouts/header');
-		$this->load->view('Layouts/foundation_nav');
+		$this->load->view('Layouts/header_nav');
 		$this->load->view('properties/index.php', $data);
 		$this->load->view('Layouts/footer');
 	}
