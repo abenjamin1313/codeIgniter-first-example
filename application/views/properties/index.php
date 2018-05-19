@@ -26,7 +26,7 @@
           <td>Greeley, CO </td>
           <td>Available</td>
           <td>
-            <a class="button success">View Details</a>
+            <a type="button" class="btn btn-success">View Details</a>
           </td>  
         </tr>
 
@@ -36,7 +36,7 @@
           <td>Loveland, CO </td>
           <td>Available</td>
           <td>
-            <a class="button success">View Details</a>
+            <a type="button" class="btn btn-success">View Details</a>
           </td>  
         </tr>
 
@@ -46,7 +46,7 @@
           <td>Platteville, CO</td>
           <td>Available</td>
           <td>
-            <a class="button success">View Details</a>
+            <a type="button" class="btn btn-success">View Details</a>
           </td>  
         </tr>
       </table>
