@@ -8,7 +8,7 @@
           <a href="#/users">Properties</a>
         </li> 
         <li>
-          <a href="#">Link</a>
+          <a href="/show">Link</a>
         </li> 
       </ul> 
   </div>

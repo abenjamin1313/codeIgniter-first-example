@@ -22,4 +22,4 @@
     <title>CodeIgniter Base App</title>
     </head>
     <body class="container-fluid">
-        <input type="hidden" id="hidSiteURL" value="">
+        

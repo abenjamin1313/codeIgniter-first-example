@@ -2,15 +2,14 @@
   <br/><br />
   <div class="col-sm-12">
     <h2 class="text-center">Welcome, <?php echo $user_name; ?></h2>
-    <br/>
-    <select>
+  </div>
+  <div class="col-sm-10 col-sm-offset-1">
+  <select>
         <?php foreach($status_group as $status){ ?>
           <option><?php echo $status; ?></option>
           <?php } ?>
     </select>
-  </div>
-<hr />
-  <div class="col-sm-12">
+    <br/>
       <h3>Properties details</h3>
       <table class="table table-striped table-hover">
         <tr>
