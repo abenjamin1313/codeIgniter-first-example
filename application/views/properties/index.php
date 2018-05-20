@@ -18,7 +18,7 @@
               <h4>Showing filter for: <?php echo $selected_filter ?></h4>
             <?php } ?>
       <br/>
-        <h3>Properties details</h3>
+        <h3>Housing Details</h3>
         <table class="table table-striped table-hover">
           <tr>
             <td>IMAGE</td>

@@ -10,7 +10,7 @@ class Properties extends CI_Controller {
 
 	public function index()
 	{
-		$data['user_name'] = 'Adam';
+		$data['user_name'] = ' User Name';
 		$data['status_group'] = ['All', 'Available', 'Unavailable'];
 		$data['properties'] = $this->Property->all();
 
