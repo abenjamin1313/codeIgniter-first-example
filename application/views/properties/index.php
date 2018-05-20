@@ -16,38 +16,26 @@
           <td>IMAGE</td>
           <td>NAME</td>
           <td>LOCATION</td>
-          <td>STATUS</td>  
-          <td>ACTION</td>  
+          <td>STATUS</td>
+          <td>Description</td> 
+          <td>View</td>
+          <td>Edit</td> 
         </tr>
+        <?php foreach($properties as $property) { ?>
         <tr>
-          <td><img src="<?php echo base_url('CodeIgniter/codeigniter/assets/images/ThinkstockPhotos-145054512.jpg'); ?>" width="150" /></td>  
-          <td>4 Bedroom 2 Story House </td>
-          <td>Greeley, CO </td>
-          <td>Available</td>
+          <td><img src="<?php echo base_url("CodeIgniter/codeigniter/assets/images/{$property['image']}"); ?>" width="150" /></td>  
+          <td><?php echo $property['name'] ?></td>
+          <td><?php echo $property['city'] ?>, <?php echo $property['state'] ?></td>
+          <td><?php echo $property['status_id'] ?></td>
+          <td><?php echo $property['description'] ?></td>
           <td>
-            <a href="<?php echo site_url('properties/show/1') ?>" type="button" class="btn btn-success">View Details</a>
-          </td>  
-        </tr>
-
-        <tr>
-          <td><img src="<?php echo base_url('CodeIgniter/codeigniter/assets/images/ThinkstockPhotos-160415922.jpg'); ?>" width="150" /></td>  
-          <td>Spacious Classic Home</td>
-          <td>Loveland, CO </td>
-          <td>Available</td>
+            <a href="<?php echo site_url('properties/show/' . $property['id']); ?>" type="button" class="btn btn-success">View Details</a>
+          </td>
           <td>
-            <a type="button" class="btn btn-success">View Details</a>
-          </td>  
+          <a href="<?php echo site_url('properties/edit/' . $property['id']); ?>" type="button" class="btn btn-info">Edit Details</a>
+         </td>
         </tr>
-
-        <tr>
-          <td><img src="<?php echo base_url('CodeIgniter/codeigniter/assets/images/ThinkstockPhotos-179240420.jpg'); ?>" width="150" /></td>  
-          <td>3 Bedroom Condo</td>
-          <td>Platteville, CO</td>
-          <td>Available</td>
-          <td>
-            <a type="button" class="btn btn-success">View Details</a>
-          </td>  
-        </tr>
+        <?php } ?>
       </table>
       <br/>
   </div>

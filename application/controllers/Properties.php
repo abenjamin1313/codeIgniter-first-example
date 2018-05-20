@@ -12,6 +12,7 @@ class Properties extends CI_Controller {
 	{
 		$data['user_name'] = 'Adam';
 		$data['status_group'] = ['All', 'Available', 'Unavailable'];
+		$data['properties'] = $this->Property->all();
 		$this->load->view('Layouts/header');
 		$this->load->view('Layouts/header_nav');
 		$this->load->view('properties/index', $data);
@@ -22,12 +23,9 @@ class Properties extends CI_Controller {
 	{
 		$data['id'] = $id;
 		$data['name'] = $this->Property->get();
+		$version = $this->Property->get_version();
+		$data['version'] = $version->conn_id->server_info;
 		$this->load->view('properties/show', $data);
-	}
-
-	public function db_test()
-	{
-		$this->Property->connection_test();
 	}
 
 }
