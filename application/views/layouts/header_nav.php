@@ -2,7 +2,7 @@
   <div class="container">
     <ul class="nav navbar-nav"> 
         <li class="active">
-          <a href="#">Home</a>
+          <a href="/CodeIgniter/codeigniter/index.php">Home</a>
         </li> 
         <li>
           <a href="#/users">Properties</a>

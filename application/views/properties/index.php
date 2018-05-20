@@ -17,17 +17,15 @@
           <td>NAME</td>
           <td>LOCATION</td>
           <td>STATUS</td>
-          <td>Description</td> 
           <td>View</td>
           <td>Edit</td> 
         </tr>
         <?php foreach($properties as $property) { ?>
         <tr>
-          <td><img src="<?php echo base_url("CodeIgniter/codeigniter/assets/images/{$property['image']}"); ?>" width="150" /></td>  
+          <td><img src="<?php echo base_url("assets/images/{$property['image']}"); ?>" width="150" /></td>  
           <td><?php echo $property['name'] ?></td>
           <td><?php echo $property['city'] ?>, <?php echo $property['state'] ?></td>
           <td><?php echo $property['status_id'] ?></td>
-          <td><?php echo $property['description'] ?></td>
           <td>
             <a href="<?php echo site_url('properties/show/' . $property['id']); ?>" type="button" class="btn btn-success">View Details</a>
           </td>

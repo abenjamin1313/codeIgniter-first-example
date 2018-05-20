@@ -7,9 +7,16 @@ class Property extends CI_Model
         $this->db = $this->load->database('default', TRUE);
     }
     
-    public function get()
+    public function get($id)
     {
-        return "4 bedroom 2 story house";
+        $where['id'] = $id;
+        $this->db->get_where('properties', $where);
+    }
+
+    public function update($id, $new_data)
+    {
+        $where['id'] = $id;
+        $this->db->update('properties', $new_data ,$where);
     }
 
     public function get_version()
